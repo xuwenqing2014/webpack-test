@@ -34,3 +34,11 @@ webpack的学习记录
 #### vue-loader vue-template-compiler 可以支持编译.vue文件
 
 #### clean-webpack-plugin 可以清除打包后的文件夹
+
+#### 打包优化
+
+##### 使用DllPlugin打包，可以隔离不用重新构建的包，加快构建速度，比如vue react react-dom这些js库
+
+##### 使用includes和excludes去除不必要的构建
+
+##### production环境默认开启tree-shaking去除不必要代码
