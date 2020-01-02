@@ -32,3 +32,5 @@ webpack的学习记录
 ##### file-loader不支持小图片base64，url-loader可以支持小图片base64
 
 #### vue-loader vue-template-compiler 可以支持编译.vue文件
+
+#### clean-webpack-plugin 可以清除打包后的文件夹
