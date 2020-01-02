@@ -19,6 +19,8 @@ webpack的学习记录
 
 #### sass-loader node-sass 可以支持sass
 
+#### less-loader 可以支持less
+
 #### postcss-loader autoprefixer 可以支持自动加css前缀
 
 #### mini-css-extract-plugin 或者 extract-text-webpack-plugin可以支持css从js中抽离
