@@ -59,7 +59,7 @@
 
 ### 打包优化
 
-- 使用DllPlugin打包，可以隔离不用重新构建的包，比如vue react react-dom这些js库，一般只使用在开发环境，加快构建速度
+- 使用DllPlugin打包，可以隔离不用重新构建的包，比如vue react react-dom这些js库，DllPlugin一般只使用在开发环境，加快构建速度
 
 - 使用 cache-loader 和 thread-loader加快构建速度
 
