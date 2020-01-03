@@ -4,3 +4,6 @@ ul, li{
 .main{
     transform: translate(10px);
 }
+.aaa{
+    color: #ccc;
+}

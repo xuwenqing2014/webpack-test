@@ -1,5 +1,5 @@
-require('./css/reset.css');
-const Person = require('./js/a.js');
+import './css/reset.css';
+import Person from './js/a.js';
 const a = new Person();
 
 import Vue from 'vue';

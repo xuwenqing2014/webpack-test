@@ -1,4 +1,4 @@
-require('../css/a.css');
+import '../css/a.css';
 class Person {
     constructor() {
         this.name = 'hello';
@@ -7,4 +7,4 @@ class Person {
         return this.name;
     }
 }
-module.exports = Person;
+export default Person;
