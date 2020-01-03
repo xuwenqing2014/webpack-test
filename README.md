@@ -44,7 +44,7 @@
 
 - 使用了@babel/polyfill之后代码体积会变大，污染全局变量，@babel/runtime @babel/plugin-transform-runtime可以减小编译后的体积，模块引用
 
-- file-loader 或者 url-loader可以支持图片模块
+- file-loader 或者 url-loader可以支持引入文件
 
 - file-loader不支持小文件转化为base64格式，但是可以为文件名添加hash值，url-loader可以支持小文件转化为base64格式，这两个可以搭配使用
 

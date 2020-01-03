@@ -18,12 +18,12 @@ module.exports = {
     },
     devServer: {
         port: 3001,
-        contentBase: path.resolve(__dirname, './dist'),
-        hot: true,
-        open: true,
-        proxy: {
-            '/api': {
-                target: 'http://localhost:9001'
+        contentBase: path.resolve(__dirname, './dist'), // 开服务器的根路径
+        hot: true, // 开启热更新
+        open: true, // 自动打开浏览器
+        proxy: { // 设置本地服务器代理解决跨域
+            '/api': { // 标识
+                target: 'http://localhost:9001' // 代理目标
             }
         }
     },
@@ -82,7 +82,9 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin(),
+        new CleanWebpackPlugin({
+            cleanOnceBeforeBuildPatterns: ['dist/**/*', '!dist/vendors/**/*']
+        }),
         new HtmlWepackPlugin({
             template: path.resolve(__dirname, './public/index.html'),
             filename: 'index.html'

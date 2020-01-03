@@ -1,18 +1,18 @@
 const webpack = require('webpack');
 const path = require('path');
 
-const vendors = [
+const venders = [
     'vue'
 ];
 
 module.exports = {
     output: {
-        path: path.resolve(__dirname + '/dll'),
+        path: path.resolve(__dirname + '/dist/venders'),
         filename: '[name].js',
         library: '[name]'
     },
     entry: {
-        venders: vendors
+        venders: venders
     },
     plugins: [
         new webpack.DllPlugin({
