@@ -40,9 +40,9 @@
 
 - @babel/preset-env 是根据浏览器或者运行环境来将es6转化成es5，比如根据browserslist
 
-- @babel/polyfill 是对es6降级es5的一个垫片，是对babel-loader的补充
+- 补充说明1：@babel/polyfill 是对es6降级es5的一个垫片，是对babel-loader的补充，但是会污染全局，不能按需引入，不建议这种方式
 
-- 使用了@babel/polyfill之后代码体积会变大，污染全局变量，@babel/runtime @babel/plugin-transform-runtime可以减小编译后的体积，模块引用
+- 补充说明2：@babel/runtime @babel/plugin-transform-runtime也是对es6降级es5的一个垫片，可以按需引入，模块化加载，不污染全局，推荐使用
 
 - file-loader 或者 url-loader可以支持引入文件
 
