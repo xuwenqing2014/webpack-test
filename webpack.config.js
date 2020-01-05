@@ -99,6 +99,8 @@ module.exports = {
         }),
         new webpack.DllReferencePlugin({
             manifest: require('./dll/manifest.json')
-        })
+        }),
+        // 热替换，需要搭配devServer的hot:true热更新去使用
+        new webpack.HotModuleReplacementPlugin()
     ]
 }
