@@ -69,7 +69,11 @@
 
 - 使用includes和excludes去除不必要的构建
 
-- production环境默认开启tree-shaking去除不必要代码
+- production环境默认开启tree-shaking和使用UglifyJSPlugin去除不必要代码，正确配置sideEffects，注意css的引入不能去掉副作用
+
+- 解释1：tree-shaking只是将没有使用到的代码标识为unused，UglifyJSPlugin是将unused的代码移除掉
+
+- 解释2：在vue中sideEffects可以这么设置sideEffects: ['*.css']，避免将css当成副作用移除掉了，其他的会移除副作用，节省代码
 
 - 使用purify-css purifycss-webpack去除无用的css
 
