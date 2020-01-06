@@ -63,11 +63,17 @@
 
 ### 打包优化
 
+##### 开发环境
+
 - 使用DllPlugin打包，可以隔离不用重新构建的包，比如vue react react-dom这些js库，DllPlugin一般只使用在开发环境，加快构建速度
 
 - 使用 cache-loader 和 thread-loader加快构建速度
 
 - 使用includes和excludes去除不必要的构建
+
+- 因为node.js是单线程的，所以webpack打包是一个任务一个任务按照顺序执行的，可以引入happypack将loader的转换任务变成多进程去处理，加快转换速度
+
+##### 生产环境
 
 - production环境默认开启tree-shaking和使用UglifyJSPlugin去除不必要代码，正确配置sideEffects，注意css的引入不能去掉副作用
 
