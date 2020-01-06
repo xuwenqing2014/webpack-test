@@ -73,7 +73,7 @@
 
 - 解释1：tree-shaking只是将没有使用到的代码标识为unused，UglifyJSPlugin是将unused的代码移除掉
 
-- 解释2：在vue中sideEffects可以这么设置sideEffects: ['*.css']，避免将css当成副作用移除掉了，其他的会移除副作用，节省代码
+- 解释2：在vue中sideEffects可以这么设置sideEffects: ['*.css']，避免将css当成副作用移除掉了，其他的会移除副作用，节省代码，不懂sideEffects可以看看https://juejin.im/post/5b4ff9ece51d45190c18bb65
 
 - 使用purify-css purifycss-webpack去除无用的css
 
