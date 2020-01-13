@@ -56,7 +56,7 @@
 
 - clean-webpack-plugin 可以清除打包后的文件夹
 
-- webpack.HotModuleReplacementPlugin webpack自带的热替换plugin，搭配devServer的热更新hot:true去使用
+- webpack.HotModuleReplacementPlugin webpack自带的热替换plugin，或者，devServer的热替换hot:true自带热更新这个插件
 
 - 热更新是修改就会刷新页面，热替换（简称HMR）是修改只会替换修改的模块，保存其他模块的状态
 
